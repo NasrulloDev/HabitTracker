@@ -26,7 +26,11 @@ struct ContentView: View {
         NavigationStack{
             List{
                 ForEach(habits.items){ item in
-                    Text(item.title)
+                    NavigationLink{
+                        Text(item.description)
+                    } label: {
+                        Text(item.title)
+                    }
                 }
                 .onDelete(perform: removeItems)
             }
