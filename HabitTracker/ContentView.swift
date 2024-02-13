@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct Habit: Identifiable, Equatable {
-    let id = UUID()
+struct Habit: Identifiable, Equatable, Codable {
+    var id = UUID()
     let title: String
     let description: String
     var completion: Int = 0
@@ -19,9 +19,19 @@ class Habits {
     var items = [Habit]() {
         didSet {
             if let encoded = try? JSONEncoder().encode(items) {
-                UserDefaults.standard.set(encoded, forKey: "Items")
+                UserDefaults.standard.set(encoded, forKey: "Habits")
             }
         }
+    }
+    
+    init() {
+        if let savedHabits = UserDefaults.standard.data(forKey: "Habits") {
+            if let decodedItems = try? JSONDecoder().decode([Habit].self, from: savedHabits){
+                items = decodedItems
+                return
+            }
+        }
+        items = []
     }
 }
 
