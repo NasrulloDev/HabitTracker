@@ -16,7 +16,13 @@ struct Habit: Identifiable, Equatable {
 
 @Observable
 class Habits {
-    var items = [Habit]()
+    var items = [Habit]() {
+        didSet {
+            if let encoded = try? JSONEncoder().encode(items) {
+                UserDefaults.standard.set(encoded, forKey: "Items")
+            }
+        }
+    }
 }
 
 struct ContentView: View {
