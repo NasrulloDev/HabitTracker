@@ -12,6 +12,7 @@
 		2812AF6D2B78F20E00AF8352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2812AF6C2B78F20E00AF8352 /* Assets.xcassets */; };
 		2812AF702B78F20E00AF8352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2812AF6F2B78F20E00AF8352 /* Preview Assets.xcassets */; };
 		2812AF772B78F85600AF8352 /* NewHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2812AF762B78F85600AF8352 /* NewHabitView.swift */; };
+		2845F7262B7B72D700E7F1C2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2845F7252B7B72D700E7F1C2 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2812AF6C2B78F20E00AF8352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2812AF6F2B78F20E00AF8352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2812AF762B78F85600AF8352 /* NewHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitView.swift; sourceTree = "<group>"; };
+		2845F7252B7B72D700E7F1C2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				2812AF682B78F20C00AF8352 /* HabitTrackerApp.swift */,
 				2812AF6A2B78F20C00AF8352 /* ContentView.swift */,
+				2845F7252B7B72D700E7F1C2 /* DetailView.swift */,
 				2812AF762B78F85600AF8352 /* NewHabitView.swift */,
 				2812AF6C2B78F20E00AF8352 /* Assets.xcassets */,
 				2812AF6E2B78F20E00AF8352 /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2812AF772B78F85600AF8352 /* NewHabitView.swift in Sources */,
+				2845F7262B7B72D700E7F1C2 /* DetailView.swift in Sources */,
 				2812AF6B2B78F20C00AF8352 /* ContentView.swift in Sources */,
 				2812AF692B78F20C00AF8352 /* HabitTrackerApp.swift in Sources */,
 			);

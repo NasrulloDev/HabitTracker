@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct Habit: Identifiable {
+struct Habit: Identifiable, Equatable {
     let id = UUID()
     let title: String
     let description: String
+    var completion: Int = 0
 }
 
 @Observable
@@ -27,7 +28,7 @@ struct ContentView: View {
             List{
                 ForEach(habits.items){ item in
                     NavigationLink{
-                        Text(item.description)
+                        DetailView(habit: item, habits: habits)
                     } label: {
                         Text(item.title)
                     }
